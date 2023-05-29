@@ -4,6 +4,10 @@ Description: >
   Sample SAM Template for
 
 Parameters:
+  Name:
+    Description: Name of App
+    Type: String
+    Default: hello-world
   EnvironmentType:
     Description: Name of Environment Type. Example - prod, test
     Type: String
