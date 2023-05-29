@@ -17,4 +17,4 @@ Parameters:
     Type: String
     AllowedPattern: ".+"
     Default: Platform
-# Resources:   # Add Resource here
+Resources:   # Add Resource here
