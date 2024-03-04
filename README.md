@@ -2,6 +2,10 @@
 
 This is a boilerplate repo for aws sam
 
+## Solution Overview
+
+![](./doc/architecture.png)
+
 ## Prerequisites
 
 ### Setup Environment
