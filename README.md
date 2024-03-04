@@ -12,12 +12,16 @@ This is a boilerplate repo for aws sam
 
 ### Setup Credentials
 
-bash```
+```bash
 export AWS_ACCESS_KEY_ID=""
 export AWS_SECRET_ACCESS_KEY=""
 export AWS_SESSION_TOKEN=""
 aws sts get-caller-identity
 ```
+
+## Dependency
+
+* [Enterprise Network]
 
 ## Deploy 
 
