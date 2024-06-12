@@ -4,6 +4,9 @@
 # Usage:
 # 1) ./aws-assume-role.sh <deployment_account> <deployment_role>
 
+# Download and Save
+# curl -O https://raw.githubusercontent.com/kiki-miumiu/sam-boilerplate/main/scripts/assume-role.sh
+
 assume_role() {
     credentials=$(aws sts assume-role --role-arn arn:aws:iam::${1}:role/${2} --duration-seconds 3600 --role-session-name ${1}-${2}-$(date "+%Y%m%d_%H%M%S"))
     if [ "$credentials" ]; then
