@@ -2,9 +2,7 @@
 #!/bin/bash
 
 # Usage:
-# 1) ./aws-assume-role.sh <branch>
-# 2) ./aws-assume-role.sh <deployment_account> <deployment_role>
-# 3) ./aws-assume-role.sh # automatically assumes role based on BRANCH env
+# 1) ./aws-assume-role.sh <deployment_account> <deployment_role>
 
 assume_role() {
     credentials=$(aws sts assume-role --role-arn arn:aws:iam::${1}:role/${2} --duration-seconds 3600 --role-session-name ${1}-${2}-$(date "+%Y%m%d_%H%M%S"))
